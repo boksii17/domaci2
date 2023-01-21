@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/* Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
@@ -26,4 +26,3 @@ Route::middleware('auth:sanctum')->group( function () {
     Route::resource('smerovi', \App\Http\Controllers\SmerController::class);
     Route::resource('studenti', \App\Http\Controllers\StudentController::class);
 });
- */
